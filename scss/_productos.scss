@@ -1,0 +1,210 @@
+.margen{
+	margin-bottom: 150px;
+}
+
+
+.listaproductos {
+	list-style-type: upper-latin;
+	color: #292929;
+}
+.fondolista {
+	background-color: $verde;
+}
+
+#nuestrosProd {
+	display: grid;
+	grid-template-areas: 
+	"tit1 tit2 tit3"
+	"tex1 tex2 tex3"
+	"ph1 ph2 ph3";
+	grid-column-gap: 10px;
+	grid-row-gap: 15px;
+}
+
+@media (max-width: 1200px) {
+	#nuestrosProd {
+		display: grid;
+		grid-template-areas: 
+		"tit1"
+		"tex1"
+		"ph1"
+		"tit2"
+		"tex2"
+		"ph2"
+		"tit3"
+		"tex3"
+		"ph3";
+	}
+}
+
+section#tit1 {
+	grid-area: tit1;
+	width: 100%;
+	text-align: center;
+}
+
+section#tit2 {
+	grid-area: tit2;
+	width: 100%;
+	text-align: center;
+}
+
+
+section#tit3 {
+	grid-area: tit3;
+	width: 100%;
+	text-align: center;
+}
+
+section#tex1 {
+	grid-area: tex1;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+section#tex2 {
+	grid-area: tex2;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+section#tex3 {
+	grid-area: tex3;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+section#ph1 {
+	grid-area: ph1;
+}
+
+section#ph2 {
+	grid-area: ph2;
+}
+
+section#ph3 {
+	grid-area: ph3;
+}
+
+.bordeBox{
+	border-radius: 20px;
+}
+
+.productos {
+	width: 100%;
+	align-items: center;
+	justify-items: center;
+}
+
+#listaPrecios {
+	width: 100%;
+	display: grid;
+	grid-template-areas: 
+	". pr1 pr2 pr3 ."
+	". pr4 pr5 pr6 ."
+	". pr7 pr8 pr9 ."
+	". pr10 pr11 pr12 .";
+	grid-template-columns: auto 15% 10% 25% auto;
+	grid-row-gap: 15px;
+}
+
+section#pr1 {
+	grid-area: pr1;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	border-top-left-radius: 40px;
+}
+
+section#pr2 {
+	grid-area: pr2;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+section#pr3 {
+	grid-area: pr3;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	border-top-right-radius: 40px;
+}
+
+section#pr4 {
+	grid-area: pr4;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+section#pr5 {
+	grid-area: pr5;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+section#pr6 {
+	grid-area: pr6;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+}
+
+section#pr7 {
+	grid-area: pr7;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+section#pr8 {
+	grid-area: pr8;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+section#pr9 {
+	grid-area: pr9;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+}
+
+section#pr10 {
+	grid-area: pr10;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	border-bottom-left-radius: 40px;
+}
+
+section#pr11 {
+	grid-area: pr11;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+section#pr12 {
+	grid-area: pr12;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	border-bottom-right-radius: 40px;
+}
+
+.tablaPrecios{
+	width: 70vw;
+}
+
+.bordePrecio{
+	border: 1px solid;
+}
+
+

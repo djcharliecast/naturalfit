@@ -1,0 +1,135 @@
+$naranja: #de795f;
+$verde: #7df08e;
+$amarillo: #f7cc4a;
+
+@import "productos";
+@import "recetas";
+@import "contacto";
+@import "nosotros";
+
+body {
+	background-color: white;
+	animation-name: background;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes background {
+	0%   {background-color: white;}
+	50%  {background-color: #fce8c0;}
+	100%  {background-color: white;}
+}
+
+.carruselProductos{
+	width: auto;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+h1 {
+	color: $verde; 
+	font-size: 45px;
+	font-family: "roboto", sans-serif;
+	text-align: center;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+h3 {
+	color: $verde; 
+	font-size: 35px;
+	font-family: "roboto", sans-serif;
+	text-align: center;
+}
+
+b {
+	color: $naranja;
+	font-family: "roboto", sans-serif;
+}
+.titulo {
+	letter-spacing: 5px;
+	font-size: 25px;
+	font-family: "roboto", sans-serif;
+	font-weight: 600;
+	transition: all 0.5s;
+}
+
+.titulo:hover {
+	letter-spacing: 13px;
+}
+
+
+.header {
+	position: sticky;
+	top: 0px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+
+.header__menu {
+	width: auto;
+}
+
+
+footer {
+	height: 90px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: $amarillo;
+	margin-top: 30px;
+	padding: 20px;
+		div {
+			line-height: 4px;
+		}
+}
+
+
+
+.hoverImagen {
+	transition: all 0.6s;
+}
+
+.hoverImagen:hover {
+	transform: scale(1.3);
+}
+
+.fadeIn{
+	animation:opac 1.4s;
+}
+@keyframes opac{from{opacity:0} to{opacity:1}}
+
+.fadeInDelay{
+	animation:opac 3s;
+}
+@keyframes opac{from{opacity:0} to{opacity:1}}
+
+
+.fadeInDelayLargo{
+	animation:opac 5s;
+}
+@keyframes opac{from{opacity:0} to{opacity:1}}
+
+
+@media (max-width: 700px) {
+  .tituloGrande {
+    display:none;
+  }
+  .tituloChico {
+    display:block;
+  }
+}
+
+@media (min-width: 701px) {
+  .tituloGrande {
+    display:block;
+  }
+  .tituloChico {
+    display:none;
+  }
+}
+
+
