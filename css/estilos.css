@@ -178,7 +178,6 @@ section#pr12 {
 
 .recetario__receta {
   width: 50%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
