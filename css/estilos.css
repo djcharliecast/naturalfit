@@ -127,6 +127,10 @@ section#ph3 {
   margin: auto;
   width: 60%; }
 
+@media (max-width: 900px) {
+  .formulario {
+    width: 90%; } }
+
 .formulario__entrada {
   border-radius: 10px;
   border: solid 1px black;
