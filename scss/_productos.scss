@@ -100,11 +100,17 @@ section#ph3 {
 }
 
 .tablaPrecios{
-	width: 70vw;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (max-width: 900px){
+	.tablaPrecios {
+		width: 90%;
+	}
 }
 
 .bordePrecio{
 	border: 1px solid;
 }
-
-

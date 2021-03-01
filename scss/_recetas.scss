@@ -5,29 +5,41 @@
 	margin-bottom: 30px;
 	flex-wrap: wrap;
 	flex-grow: 1;
+	justify-content: space-around;
 }
 
 .recetario__titulo {
-	color: $naranja;
+	color: orange;
 	font-size: 30px;
 	font-family: "roboto", sans-serif;
-	font-weight: 150;
-	background-color: yellow;
+	font-weight: 600;
+	background-color: white;
 	padding: 10px;
 	text-align: center;
-	border: solid 2px black;
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px #292929;
+	margin-bottom: 30px;
 }
 
 .recetario__receta {
-	width: 50%;
+	width: 45%;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	margin-bottom: 25px;
 }
 
 @media (max-width: 900px){
 	.recetario {
+		flex-direction: column;
+		align-items: center;
+	}	
+}
+
+@media (max-width: 900px){
+	.recetario__receta {
+		width: 90%;
 		flex-direction: column;
 		align-items: center;
 	}	

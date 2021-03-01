@@ -6,3 +6,29 @@
 .nosotros__texto{
 	font-size: 25px;
 }
+
+.integrante {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+
+@media (max-width: 900px){
+	.integrante {
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+	}	
+}
+
+.integranteDescripcion{
+	margin-top: 30px;
+	margin-left: 40px;
+}
+
+@media (max-width: 900px){
+	.integranteDescripcion {
+	margin-left: 0;
+	}	
+}
