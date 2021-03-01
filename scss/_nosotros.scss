@@ -22,6 +22,17 @@
 	}	
 }
 
+.fotoIntegrante {
+	width: 30%;
+	height: 100%;
+}
+
+@media (max-width: 900px){
+	.fotoIntegrante {
+	width: 60%;
+	}	
+}
+
 .integranteDescripcion{
 	margin-top: 30px;
 	margin-left: 40px;
@@ -32,3 +43,5 @@
 	margin-left: 0;
 	}	
 }
+
+

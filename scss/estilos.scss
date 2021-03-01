@@ -14,6 +14,13 @@ $amarillo: #f7cc4a;
 
 .carousel-inner img {
   margin: auto;
+  width: 60%;
+}
+
+@media (max-width: 900px){
+	.carousel-inner img {
+		width: 90%;
+	}	
 }
 
 h1 {
@@ -59,6 +66,7 @@ b {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: nowrap;
+	z-index: 100;
 }
 
 .header__menu {
@@ -67,16 +75,14 @@ b {
 
 
 footer {
-	height: 90px;
+	height: 80px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
+	text-align: center;
 	background-color: $amarillo;
 	margin-top: 30px;
 	padding: 20px;
-		div {
-			line-height: 4px;
-		}
 }
 
 .fondoContenedor{
@@ -113,25 +119,13 @@ footer {
 @keyframes opac{from{opacity:0} to{opacity:1}}
 
 
-@media (max-width: 700px) {
-  .tituloGrande {
-    display:none;
-  }
-  .tituloChico {
-    display:block;
-  }
-}
-
-@media (min-width: 701px) {
-  .tituloGrande {
-    display:block;
-  }
-  .tituloChico {
-    display:none;
-  }
-}
-
 .margenInferior{
 	margin-bottom: 35px;
 }
 
+
+.whatsapp {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+}
